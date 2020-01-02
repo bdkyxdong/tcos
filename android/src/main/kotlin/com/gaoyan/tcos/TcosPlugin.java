@@ -35,7 +35,7 @@ public class TcosPlugin implements MethodChannel.MethodCallHandler {
      * Plugin registration.
      */
     public static void registerWith(PluginRegistry.Registrar registrar) {
-        final MethodChannel channel = new MethodChannel(registrar.messenger(), "tencent_cos");
+        final MethodChannel channel = new MethodChannel(registrar.messenger(), "tcos");
         channel.setMethodCallHandler(new TcosPlugin(registrar, channel));
     }
 
