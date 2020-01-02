@@ -15,7 +15,5 @@ void main() {
     channel.setMockMethodCallHandler(null);
   });
 
-  test('getPlatformVersion', () async {
-    expect(await Tcos.platformVersion, '42');
-  });
+
 }
