@@ -94,7 +94,7 @@ public class TcosPlugin implements MethodChannel.MethodCallHandler {
                 @Override
                 public void onFail(CosXmlRequest request, CosXmlClientException exception, CosXmlServiceException serviceException) {
                     // Log.d("TcosPlugin", "Failed: " + (exception.toString() + serviceException.toString()));
-                    data.put("message", (exception.toString() + serviceException.toString()));
+                    // data.put("message", (exception.toString() + serviceException.toString()));
                     ((Activity) registrar.activeContext()).runOnUiThread(new Runnable() {
                         @Override
                         public void run() {
